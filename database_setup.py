@@ -16,7 +16,7 @@ class User(Base):
 
 
 #connect to a database
-engine=create_engine('sqlite:///:memory:',echo=True)
+engine=create_engine('sqlite:///users.db',echo=True)
 
 
 #now make class into the table in db
