@@ -10,8 +10,8 @@ users = Table('users',meta,
 	Column('uid',Integer,primary_key=True),
 	Column('name',String(150))
 	)
-
-#users.create(engine)
+	
+#metadata.create_all(engine)
 # OR 
 #bind the connection to metadata and create
 meta.bind=engine
