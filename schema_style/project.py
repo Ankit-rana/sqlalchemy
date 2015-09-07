@@ -1,6 +1,6 @@
 from sqlalchemy import create_engine,Table,Integer,String,Table,Column,MetaData
 
-#lazy connection
+#lazy connection  'dialect+driver://user:passwd@host:port/dbname'
 engine = create_engine('sqlite:///users.db')
 
 #create metdata and create all tables in it
